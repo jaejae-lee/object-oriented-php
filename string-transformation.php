@@ -2,7 +2,7 @@
 
 class StringyRedux
 {
-    private $string;
+    private $string; // not neccessary here as you dont keep track on the string input 
 
     public function __construct($string)
     {
@@ -12,7 +12,7 @@ class StringyRedux
     public function lower()
     {
         $this->string = strtolower($this->string);
-        return $this;
+        return $this; // because you chain methods you need to return this object not the transformed string itself
     }
 
     public function upper()
@@ -35,7 +35,7 @@ class StringyRedux
 
     public function get()
     {
-        return $this->string;
+        return $this->string; // return fully transformed string at last
     }
 
 }

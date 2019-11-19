@@ -5,7 +5,7 @@ class Car
     private $make;
     private $numberplate;
     private $mileage = 0;
-    private $addJourney = 0;
+    // private $addJourney = 0;
 
     public function __construct($make, $numberPlate)
     {
@@ -30,7 +30,8 @@ class Car
 
     public function addJourney ($addJourney)
     {
-        return $this->mileage += $addJourney;
+        $this->mileage += $addJourney; //if you do return here - you return mileage
+        return $this; // return object
     }
 
 

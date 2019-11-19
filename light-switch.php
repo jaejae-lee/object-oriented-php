@@ -12,13 +12,13 @@ class LightSwitch
     public function turnOn()
     {
         $this->isOn = true;
-        return $this;
+        return $this; //dont have to return here, but useful to return value to use later for something
     }
 
     public function turnOff()
     {
        $this->isOn = false;
-       return $this;
+        return $this;
     }
 
 }

@@ -7,12 +7,12 @@ class Stringy
     public function __construct($string)
     {
         $this->string = $string;
-        return $this;
+        // return $this; dont need here
     }
 
     public function lower()
     {
-        return strtolower($this->string);
+        return strtolower($this->string); // this return the string transform!
     }
 
     public function upper()
