@@ -61,3 +61,5 @@ $shelf = new Shelf();
 $shelf->addBook($book);
 $shelf->addBook(new Book("The Catcher in the Rye", 277));
 $shelf->addBook(new Book("Stamped from the Beginning", 582));
+
+dump($shelf->titles()); // array:3 [ 0 => "Zero: The Biography of a Dangerous Idea" 1 => "The Catcher in the Rye" 2 => "Stamped from the Beginning" ]

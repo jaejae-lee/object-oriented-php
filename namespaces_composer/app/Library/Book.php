@@ -26,6 +26,9 @@ class Book
     //    return $this;
     }
 
-    // public function 
+    public function title()
+    {
+        return $this->title;
+    }
 
 }
