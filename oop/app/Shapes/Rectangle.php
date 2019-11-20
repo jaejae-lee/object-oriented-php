@@ -1,7 +1,7 @@
 <?php
 namespace App\Shapes;
 
-Class Rectangle implements ShapeInterface
+class Rectangle implements ShapeInterface
 {
     private $width;
     private $height;

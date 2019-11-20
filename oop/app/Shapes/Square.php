@@ -1,7 +1,7 @@
 <?php
 namespace App\Shapes;
 
-Class Square implements ShapeInterface
+class Square implements ShapeInterface
 {
     private $side_length;
    
