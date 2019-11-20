@@ -3,11 +3,11 @@ namespace App\Library;
 
 class Shelf
 {
-    private $books = array();
+    private $books = [];
 
     public function addBook($book)
     {
-        $this->books = array_push($this->books, $book);
+        $this->books[] = array_push($this->books, $book);
         return $this;
     }
 

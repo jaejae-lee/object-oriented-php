@@ -13,10 +13,11 @@ class Potato
 
     public function hasGrown()
     {
-     if ($this->watered >= 5){
-         return true;
-     }else{
-         return false;
-     }
+    //  if ($this->watered >= 5){
+    //      return true;
+    //  }else{
+    //      return false;
+    //  }
+     return $this->watered >= 5;
     }
 }

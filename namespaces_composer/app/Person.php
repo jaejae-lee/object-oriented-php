@@ -18,7 +18,7 @@ class Person
         return "{$this->firstname} {$this->lastname}";
     }
 
-    public function sayHelloTo ($person)
+    public function sayHelloTo (Person $person)
     {
         return "hello {$person->fullname()}";
     }
