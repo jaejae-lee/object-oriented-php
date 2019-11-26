@@ -19,7 +19,6 @@ class Authors extends Controller
      */
     public function index(Author $author)
     {
-        // return $author->books;
         return AuthorResource::collection(Author::all()); 
     }
 

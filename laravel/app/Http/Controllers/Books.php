@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Book; //model Book
 use App\Author; //model Author
+use App\Shop;
 
 use App\Http\Requests\BookRequest;
 use App\Http\Resources\BookResource;
 use App\Http\Resources\BookListResource;
+use App\Http\Resources\BookShopsResource;
 
 class Books extends Controller
 {
@@ -49,6 +51,12 @@ class Books extends Controller
     {
         // return the resource
         return new BookResource($book_id);
+    }
+
+    public function show_shops(Book $book_id)
+    {
+        // return the resource
+        return new BookShopsResource($book_id);
     }
 
     /**
